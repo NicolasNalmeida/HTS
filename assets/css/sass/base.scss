@@ -1,0 +1,27 @@
+// FONTS
+$inter: "Inter", serif;
+$roboto: "Roboto", serif;
+
+// FONTS WEIGHTS
+$black: 900;
+$bold: 600;
+$regular: 400;
+$light: 300;
+
+// BREAKPOINTS
+$bp320: 320px - 1px;
+$bp375: 375px - 1px;
+$bp480: 480px - 1px;
+$bp600: 600px - 1px;
+$bp768: 768px - 1px;
+$bp992: 992px - 1px;
+$bp1024: 1024px - 1px;
+$bp1200: 1200px - 1px;
+$bp1440: 1440px - 1px;
+
+html {
+    font-family: $roboto;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: $regular;
+}

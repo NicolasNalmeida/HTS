@@ -1,0 +1,167 @@
+.header {
+    background-color: #221D44;
+    padding: 20px 0;
+    position: relative;
+
+    .header__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav__menu-content {
+            display: flex;
+            align-items: center;
+
+            .logo {
+                @media(max-width: $bp992) {
+                    display: none;
+                }
+            }
+
+            .hamburger {
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                flex-direction: column;
+                display: none;
+
+                @media(max-width: $bp992) {
+                    display: flex;
+                }
+
+                .hm {
+                    width: 27px;
+                    height: 4px;
+                    border-radius: 30px;
+                    background-color: #221D44;
+                    display: block;
+                    margin-bottom: 5px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .menu-content {
+            display: flex;
+            background-color: #9ac4e256;
+            border-radius: 12px;
+            margin-left: 15px;
+
+            .nav-item {
+                color: #fff;
+                text-decoration: none;
+                padding: 13px 30px;
+                display: block;
+                font-size: 15px;
+                font-family: $inter;
+
+                @media(max-width: $bp1200) {
+                    font-size: 12px;
+                    padding: 13px 20px;
+                }
+
+                &.select {
+                    border-radius: 12px;
+                    background-color: #5DA3D4;
+                }
+            }
+
+            @media(max-width: $bp992) {
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin-left: 0;
+                border-radius: 0;
+                height: 100vh;
+                background-color: #f5f5f5;
+                flex-direction: column;
+                width: 40%;
+                display: none;
+
+                .nav-item {
+                    color: #000;
+
+                    &.select {
+                        border-radius: 0px;
+                        background-color: #5DA3D4;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .user-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .mobile-status {
+                display: none;
+
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 30px;
+                    margin: 0 10px;
+                    display: inline-block;
+                    position: relative;
+
+                    .count {
+                        position: absolute;
+                        top: -5px;
+                        left: -5px;
+                        font-size: 12px;
+                        width: 20px;
+                        height: 20px;
+                        background-color: red;
+                        border-radius: 50%;
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+                @media(max-width: $bp992) {
+                    display: block;
+                }
+            }
+
+            .user {
+                color: #fff;
+                text-align: right;
+
+                .name {
+                    font-weight: $regular;
+                    font-size: 18px;
+                }
+
+                .user-link {
+                    font-weight: $light;
+                    font-size: 12px;
+                    margin-top: 5px;
+                    text-decoration: none;
+                    color: #fff;
+                    display: inline-block;
+                }
+
+                @media(max-width: $bp992) {
+                    display: none;
+                }
+            }
+
+            .photo-user {
+                border: 2px solid #fff;
+                border-radius: 50%;
+                margin-left: 10px;
+            }
+        }
+    }
+}
