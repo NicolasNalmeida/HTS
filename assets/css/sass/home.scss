@@ -7,7 +7,7 @@
         }
 
         .paragraph {
-            font-size: 25px;
+            @include toRem(25px);
             font-weight: $light;
             letter-spacing: 1px;
             line-height: 30px;
@@ -22,14 +22,14 @@
 
             .subtitle {
                 font-weight: $black;
-                font-size: 25px;
+                @include toRem(25px);
             }
 
             .list {
                 list-style-type: disc;
                 margin-left: 30px;
                 font-weight: $light;
-                font-size: 18px;
+                @include toRem(18px);
                 margin-top: 10px;
 
                 li {
@@ -39,21 +39,21 @@
 
             @media(max-width: $bp768) {
                 .subtitle {
-                    font-size: 20px;
+                    @include toRem(20px);
                 }
 
                 .list {
-                    font-size: 16px;
+                    @include toRem(16px);
                 }
             }
 
             @media(max-width: $bp600) {
                 .subtitle {
-                    font-size: 18px;
+                    @include toRem(18px);
                 }
 
                 .list {
-                    font-size: 14px;
+                    @include toRem(14px);
                 }
             }
         }
@@ -65,7 +65,7 @@
 
             .paragraph {
                 width: 60%;
-                font-size: 20px;
+                @include toRem(20px);
                 line-height: initial;
                 letter-spacing: 1px;
             }
@@ -80,7 +80,7 @@
         @media(max-width: $bp768) {
             .paragraph {
                 width: 60%;
-                font-size: 18px;
+                @include toRem(18px);
                 line-height: initial;
                 letter-spacing: 1px;
             }
@@ -95,7 +95,7 @@
         @media(max-width: $bp600) {
             .paragraph {
                 width: 50%;
-                font-size: 16px;
+                @include toRem(16px);
             }
 
             .mobile-list  {
@@ -118,14 +118,14 @@
 
             .subtitle {
                 font-weight: $black;
-                font-size: 40px;
+                @include toRem(40px);
             }
 
             .list {
                 list-style-type: disc;
                 margin-left: 30px;
                 font-weight: $light;
-                font-size: 25px;
+                @include toRem(25px);
                 margin-top: 20px;
 
                 li {
@@ -135,11 +135,11 @@
 
             @media(max-width: $bp1400) {
                 .subtitle {
-                    font-size: 30px;
+                    @include toRem(30px);
                 }
 
                 .list {
-                    font-size: 20px;
+                    @include toRem(20px);
                     margin-top: 5px;
                 }
             }
@@ -147,7 +147,7 @@
             @media(max-width: $bp1200) {
                 width: 40%;
                 .list {
-                    font-size: 18px;
+                    @include toRem(18px);
                 }
             }
 
@@ -169,7 +169,7 @@
             }
 
             .subtitle {
-                font-size: 60px;
+                @include toRem(60px);
                 font-weight: $black;
                 text-transform: uppercase;
                 line-height: 55px;
@@ -177,7 +177,7 @@
 
             .disclaimer {
                 display: block;
-                font-size: 12px;
+                @include toRem(12px);
                 margin-bottom: 40px;
                 margin-top: 8px;
 
@@ -192,7 +192,7 @@
                 }
     
                 .subtitle {
-                    font-size: 35px;
+                    @include toRem(35px);
                     line-height: 30px;
                 }
 
@@ -203,14 +203,14 @@
 
             @media(max-width: $bp992) {
                 .subtitle {
-                    font-size: 50px;
+                    @include toRem(50px);
                     line-height: 45px;
                 }
             }
 
             @media(max-width: $bp768) {
                 .subtitle {
-                    font-size: 38px;
+                    @include toRem(38px);
                 }
             }
 
@@ -234,13 +234,13 @@
         }
 
         .title {
-            font-size: 55px;
+            @include toRem(55px);
             color: #FDC300;
             font-weight: $black;
         }
 
         .paragraph {
-            font-size: 20px;
+            @include toRem(20px);
             letter-spacing: 1.5px;
             word-spacing: 1px;
             color: #fff;
@@ -253,12 +253,12 @@
             padding: 20px 30px;
 
             .title {
-                font-size: 35px;
+                @include toRem(35px);
                 text-align: center;
             }
     
             .paragraph {
-                font-size: 15px;
+                @include toRem(15px);
                 text-align: center;
             }
         }
@@ -268,11 +268,11 @@
             padding: 20px 30px;
 
             .title {
-                font-size: 20px;
+                @include toRem(20px);
             }
     
             .paragraph {
-                font-size: 12px;
+                @include toRem(12px);
             }
         }
     }

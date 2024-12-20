@@ -25,3 +25,8 @@ html {
     font-style: normal;
     font-weight: $regular;
 }
+
+// MIXINS
+@mixin toRem($value) {
+    font-size: #{$value / 16px}rem
+}
