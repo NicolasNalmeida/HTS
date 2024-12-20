@@ -1,13 +1,279 @@
 .prize {
-    .paragraph {
-        font-size: 25px;
-        font-weight: $light;
-        letter-spacing: 1px;
-        line-height: 30px;
-        margin-top: 25px;
+    .prize__banner {
+        .banner-prize {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            width: 100%;
+        }
 
-        strong {
+        .paragraph {
+            font-size: 25px;
+            font-weight: $light;
+            letter-spacing: 1px;
+            line-height: 30px;
+    
+            strong {
+                font-weight: $black;
+            }
+        }
+
+        .mobile-list {
+            display: none;
+
+            .subtitle {
+                font-weight: $black;
+                font-size: 25px;
+            }
+
+            .list {
+                list-style-type: disc;
+                margin-left: 30px;
+                font-weight: $light;
+                font-size: 18px;
+                margin-top: 10px;
+
+                li {
+                    margin-bottom: 5px;
+                }
+            }
+
+            @media(max-width: $bp768) {
+                .subtitle {
+                    font-size: 20px;
+                }
+
+                .list {
+                    font-size: 16px;
+                }
+            }
+
+            @media(max-width: $bp600) {
+                .subtitle {
+                    font-size: 18px;
+                }
+
+                .list {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        @media(max-width: $bp992) {
+            .prize__banner-flex {
+                display: flex;
+            }
+
+            .paragraph {
+                width: 60%;
+                font-size: 20px;
+                line-height: initial;
+                letter-spacing: 1px;
+            }
+
+            .mobile-list  {
+                display: block;
+                width: 40%;
+                padding-left: 5px;
+            }
+        }
+
+        @media(max-width: $bp768) {
+            .paragraph {
+                width: 60%;
+                font-size: 18px;
+                line-height: initial;
+                letter-spacing: 1px;
+            }
+
+            .mobile-list  {
+                display: block;
+                width: 40%;
+                padding-left: 20px;
+            }
+        }
+
+        @media(max-width: $bp600) {
+            .paragraph {
+                width: 50%;
+                font-size: 16px;
+            }
+
+            .mobile-list  {
+                width: 50%;
+                padding-left: 10px;
+            }
+        }
+    }
+
+    .prize__flex {
+        display: flex;
+        margin-top: 50px;
+
+        @media(max-width: $bp992) {
+            flex-direction: column;
+        }
+
+        .prize__list {
+            width: 30%;
+
+            .subtitle {
+                font-weight: $black;
+                font-size: 40px;
+            }
+
+            .list {
+                list-style-type: disc;
+                margin-left: 30px;
+                font-weight: $light;
+                font-size: 25px;
+                margin-top: 20px;
+
+                li {
+                    margin-bottom: 10px;
+                }
+            }
+
+            @media(max-width: $bp1400) {
+                .subtitle {
+                    font-size: 30px;
+                }
+
+                .list {
+                    font-size: 20px;
+                    margin-top: 5px;
+                }
+            }
+
+            @media(max-width: $bp1200) {
+                width: 40%;
+                .list {
+                    font-size: 18px;
+                }
+            }
+
+            @media(max-width: $bp992) {
+                display: none;
+            }
+        }
+
+        .banner-content {
+            display: flex;
+            align-items: flex-end;
+
+            @media(max-width: $bp992) {
+                align-items: center;
+            }
+
+            .banner {
+                width: 45%;
+            }
+
+            .subtitle {
+                font-size: 60px;
+                font-weight: $black;
+                text-transform: uppercase;
+                line-height: 55px;
+            }
+
+            .disclaimer {
+                display: block;
+                font-size: 12px;
+                margin-bottom: 40px;
+                margin-top: 8px;
+
+                @media(max-width: $bp992) {
+                    display: none;
+                }
+            }
+
+            @media(max-width: $bp1200) {
+                .banner {
+                    width: 40%;
+                }
+    
+                .subtitle {
+                    font-size: 35px;
+                    line-height: 30px;
+                }
+
+                .disclaimer {
+                    margin-top: 3px;
+                }
+            }
+
+            @media(max-width: $bp992) {
+                .subtitle {
+                    font-size: 50px;
+                    line-height: 45px;
+                }
+            }
+
+            @media(max-width: $bp768) {
+                .subtitle {
+                    font-size: 38px;
+                }
+            }
+
+            @media(max-width: $bp600) {
+                .subtitle {
+                    font-size: 6.5vw;
+                    line-height: 6vw;
+                }
+            }
+        }
+    }
+
+    .prize__finals {
+        background-color: #221D44;
+        padding: 50px;
+        border-radius: 55px;
+        margin-top: -10px;
+
+        @media(max-width: $bp992) {
+            margin-top: 20px;
+        }
+
+        .title {
+            font-size: 55px;
+            color: #FDC300;
             font-weight: $black;
+        }
+
+        .paragraph {
+            font-size: 20px;
+            letter-spacing: 1.5px;
+            word-spacing: 1px;
+            color: #fff;
+            font-weight: $light;
+            margin-top: 10px;
+        }
+
+        @media(max-width: $bp992) {
+            margin-top: 20px;
+            padding: 20px 30px;
+
+            .title {
+                font-size: 35px;
+                text-align: center;
+            }
+    
+            .paragraph {
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+        
+        @media(max-width: $bp600) {
+            margin-top: 20px;
+            padding: 20px 30px;
+
+            .title {
+                font-size: 20px;
+            }
+    
+            .paragraph {
+                font-size: 12px;
+            }
         }
     }
 }

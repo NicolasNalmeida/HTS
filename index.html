@@ -55,24 +55,45 @@
     <main>
         <section class="prize container">
             <div class="prize__banner">
-                <img src="assets/img/banner-principal.png" alt="Participe e ganhe prêmios na hora!">
-                <p class="paragraph">Gire nossa roleta virtual após realizar o envio da nota ou cupom fiscal e concorra instantaneamente à prêmios de até <strong>R$ 200,00!</strong></p>
+                
+                <picture>
+                    <source srcset="assets/img/banner-principal-mb.png" media="(max-width: 992px)" />
+                    <img class="banner-prize" src="assets/img/banner-principal.png" alt="Participe e ganhe prêmios na hora!">
+                  </picture>
+                <div class="prize__banner-flex">
+                    <p class="paragraph">Gire nossa roleta virtual em até 2 minutos após realizar o envio da nota ou cupom fiscale concorra instantaneamente a prêmios de até <strong>R$200,00!</strong></p>
+                    <div class="mobile-list">
+                        <h3 class="subtitle">Slots da roleta:</h3>
+                        <ul class="list">
+                            <li>R$ 200,00</li>
+                            <li>R$ 100,00</li>
+                            <li>R$ 50,00</li>
+                            <li>Ou "não foi dessa vez"</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="prize__flex">
                 <div class="prize__list">
                     <h3 class="subtitle">Slots da roleta:</h3>
-                    <ul class="">
+                    <ul class="list">
                         <li>R$ 200,00</li>
                         <li>R$ 100,00</li>
                         <li>R$ 50,00</li>
                         <li>Ou "não foi dessa vez"</li>
                     </ul>
                 </div>
-                <figure class="banner">
-                    <img src="">
-                    <h3>Prêmios Instantâneos*</h3>
-                    <span>*Prêmios instantâneos sujeitos à validação do cupom fiscal ou NF cadastrados.</span>
+                <figure class="banner-content">
+                    <img class="banner" src="assets/img/banner-prize.png">
+                    <div>
+                        <h3 class="subtitle">Prêmios<br> Instantâneos*</h3>
+                        <span class="disclaimer">*Prêmios instantâneos sujeitos à validação do cupom fiscal ou NF cadastrados.</span>
+                    </div>
                 </figure>
+            </div>
+            <div class="prize__finals">
+                <h2 class="title">Grandes Prêmios Finais</h2>
+                <p class="paragraph">Além da roleta, cada nota ou cupom fiscal cadastrado rende um número da sorte para concorrer ao sorteio final.</p>
             </div>
         </section>
     </main>
