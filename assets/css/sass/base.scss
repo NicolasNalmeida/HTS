@@ -26,6 +26,10 @@ html {
     font-weight: $regular;
 }
 
+body {
+    background-color: #f1f1f1;
+}
+
 // MIXINS
 @mixin toRem($value) {
     font-size: #{$value / 16px}rem
