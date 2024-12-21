@@ -681,16 +681,14 @@ $faq-background-color: #F1F1F1;
 
 .faq {
     font-family: Arial, sans-serif;
-    margin: 20px auto;
-    max-width: 100%;
+    margin-top: 50px;
     counter-reset: question-counter;
     background-color: $faq-background-color;
-    padding: 20px;
+    padding: 40px 0;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 8px; // Adicionar bordas arredondadas
 
     h2 {
         padding: 10px 20px;
@@ -702,6 +700,7 @@ $faq-background-color: #F1F1F1;
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 20px;
+        display: inline-block;
     }
 
     .list__content {
@@ -712,8 +711,8 @@ $faq-background-color: #F1F1F1;
 
         .left__list,
         .right__list {
-            flex: 1 1 40%; // Adiciona flexibilidade e largura mínima
-            max-width: 40%; // Limitar a largura máxima
+            flex: 1 1 50%; // Adiciona flexibilidade e largura mínima
+            max-width: 50%; // Limitar a largura máxima
             text-align: left;
 
             dt {
