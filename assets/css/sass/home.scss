@@ -13,7 +13,7 @@ $faq-background-color: #F1F1F1;
             font-weight: $light;
             letter-spacing: 1px;
             line-height: 30px;
-    
+
             strong {
                 font-weight: $black;
             }
@@ -72,7 +72,7 @@ $faq-background-color: #F1F1F1;
                 letter-spacing: 1px;
             }
 
-            .mobile-list  {
+            .mobile-list {
                 display: block;
                 width: 40%;
                 padding-left: 5px;
@@ -87,7 +87,7 @@ $faq-background-color: #F1F1F1;
                 letter-spacing: 1px;
             }
 
-            .mobile-list  {
+            .mobile-list {
                 display: block;
                 width: 40%;
                 padding-left: 20px;
@@ -100,7 +100,7 @@ $faq-background-color: #F1F1F1;
                 @include toRem(16px);
             }
 
-            .mobile-list  {
+            .mobile-list {
                 width: 50%;
                 padding-left: 10px;
             }
@@ -148,6 +148,7 @@ $faq-background-color: #F1F1F1;
 
             @media(max-width: $bp1200) {
                 width: 40%;
+
                 .list {
                     @include toRem(18px);
                 }
@@ -192,7 +193,7 @@ $faq-background-color: #F1F1F1;
                 .banner {
                     width: 40%;
                 }
-    
+
                 .subtitle {
                     @include toRem(35px);
                     line-height: 30px;
@@ -258,13 +259,13 @@ $faq-background-color: #F1F1F1;
                 @include toRem(35px);
                 text-align: center;
             }
-    
+
             .paragraph {
                 @include toRem(15px);
                 text-align: center;
             }
         }
-        
+
         @media(max-width: $bp600) {
             margin-top: 20px;
             padding: 20px 30px;
@@ -272,7 +273,7 @@ $faq-background-color: #F1F1F1;
             .title {
                 @include toRem(20px);
             }
-    
+
             .paragraph {
                 @include toRem(12px);
             }
@@ -321,7 +322,7 @@ $faq-background-color: #F1F1F1;
             display: none;
         }
     }
-    
+
     .sorteio__banner {
         display: flex;
         align-items: center;
@@ -458,7 +459,7 @@ $faq-background-color: #F1F1F1;
             .title {
                 @include toRem(30px);
             }
-    
+
             .sorteio__list {
                 @include toRem(18px);
             }
@@ -471,7 +472,7 @@ $faq-background-color: #F1F1F1;
             .title {
                 text-align: center;
             }
-    
+
             .sorteio__list {
                 list-style: none;
                 margin-left: 0;
@@ -523,7 +524,7 @@ $faq-background-color: #F1F1F1;
 
         .title {
             @include toRem(35px);
-            
+
             strong {
                 font-weight: $black;
             }
@@ -548,6 +549,7 @@ $faq-background-color: #F1F1F1;
     }
 
     @media(max-width: $bp480) {
+
         .pool__hth,
         .pool__calendar {
             img {
@@ -558,7 +560,8 @@ $faq-background-color: #F1F1F1;
                 width: 80%;
                 @include toRem(16px);
 
-                .title, .paragraph {
+                .title,
+                .paragraph {
                     @include toRem(16px);
                 }
             }
@@ -638,6 +641,7 @@ $faq-background-color: #F1F1F1;
 
 .products {
     margin-top: 50px;
+
     .caption-mb {
         display: none;
 
@@ -690,17 +694,19 @@ $faq-background-color: #F1F1F1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 
     h2 {
-        padding: 10px 20px;
+        font-family: $roboto;
+        padding: 10px 40px;
         border: 2px solid #1A194F;
         border-radius: 50px;
-        font-size: 16px;
-        font-weight: bold;
+        font-size: 20px;
+        font-weight: $bold;
         color: #1A194F;
         text-transform: uppercase;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         display: inline-block;
     }
 
@@ -708,19 +714,19 @@ $faq-background-color: #F1F1F1;
         display: flex;
         justify-content: center;
         gap: 40px;
-        width: 100%; // Garantir que a largura se ajuste ao contêiner
+        width: 100%;
 
         .left__list,
         .right__list {
-            flex: 1 1 50%; // Adiciona flexibilidade e largura mínima
-            max-width: 50%; // Limitar a largura máxima
+            flex: 1 1 100%; // Ajustar largura das listas
+            max-width: 100%; // Limitar largura máxima das listas
             text-align: left;
 
             dt {
                 font-weight: bold;
                 font-family: $inter;
-                font-size: 18px;
-                margin-top: 20px;
+                font-size: 20px; // Aumentar tamanho da fonte
+                margin-top: 25px; // Aumentar espaçamento entre os itens
                 color: #000000;
                 counter-increment: question-counter;
                 position: relative;
@@ -729,21 +735,49 @@ $faq-background-color: #F1F1F1;
                 &::before {
                     content: counter(question-counter) ". ";
                     position: absolute;
-                    left: 0;
-                    font-weight: $bold;
-                    font-size: 18px;
+                    left: -5px;
+                    font-weight: bold;
+                    font-size: 20px;
                     color: #000000;
                 }
             }
 
             dd {
-                margin: 5px 0 20px 25px;
-                font-size: 14px;
+                margin: 10px 0 25px 25px; // Aumentar espaçamento
+                font-size: 16px; // Aumentar tamanho da fonte
                 color: #000000;
             }
         }
     }
+
+    @media (max-width: 768px) {
+        h2 {
+            padding: 15px 50px;
+            font-size: 25px;
+            font-weight: $black;
+        }
+
+        .list__content {
+            flex-direction: column;
+            align-items: left;
+
+        }
+
+        .right__list {
+            margin-top: -70px;
+        }
+
+        dt {
+            @include toRem(25px);
+        }
+
+
+        dd {
+            @include toRem(16px);
+        }
+    }
 }
+
 
 .operation {
     margin-top: 50px;
