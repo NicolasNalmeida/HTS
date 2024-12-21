@@ -17,11 +17,16 @@ $bp768: 768px - 1px;
 $bp992: 992px - 1px;
 $bp1024: 1024px - 1px;
 $bp1200: 1200px - 1px;
-$bp1440: 1440px - 1px;
+$bp1400: 1400px - 1px;
 
 html {
     font-family: $roboto;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: $regular;
+}
+
+// MIXINS
+@mixin toRem($value) {
+    font-size: #{$value / 16px}rem
 }
